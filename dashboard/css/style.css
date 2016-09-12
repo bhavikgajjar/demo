@@ -121,6 +121,8 @@
 }
 .my-icon {
     position: relative;
+        float: right;
+    right: 85px;
 }
 .my-icon > i {
     position: absolute;
@@ -196,6 +198,30 @@
 }
 .sidebar-collapse .my-icon{
 	display: none;
+}
+.pagination{
+	margin:0;
+	float: right;
+}.form-horizontal .control-label {
+     padding-top: 0; 
+     margin-bottom: 0; 
+     text-align: left !important; 
+}
+.remarks{
+    padding: 15px;
+    background-color: papayawhip;
+}
+.form-control[disabled]{
+	cursor: default;
+}
+.sidebarsubmenu{
+	    color: #fff;
+    font-size: 18px;
+    padding: 10px 25px;
+}
+.sidebarsubmenu span{
+	margin-left: 15px;
+	float: right;
 }
 
 

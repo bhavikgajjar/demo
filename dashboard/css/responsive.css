@@ -12,6 +12,9 @@
 	.head-article{
 		width: 100%;
 	}
+	.hidecomplaint{
+		display: none;
+	}
 }
 
 /* Smaller than standard 960 (devices and browsers) */
@@ -22,6 +25,9 @@
 		.innerart{
 	margin-bottom: 10px;
 }
+.hidecomplaint{
+		display: none;
+	}
 
 }
 
