@@ -246,7 +246,7 @@
   <div class="row">
     <div class="col-sm-8">
       <div class="panel panel-default">
-        <div class="panel-heading font-bold">Complaint Escalation</div>
+        <div class="panel-heading font-bold">Complaint Escalation Level: 1</div>
         <div class="panel-body">
           <form class="bs-example form-horizontal">
 
@@ -376,13 +376,7 @@
                 <input type="text" class="form-control" placeholder="text" value="Pending" disabled>
               </div>
            
-            <label class="col-lg-2 control-label">Cust.Contacted</label>
-              <div class="col-lg-4">
-                <select class="form-control">
-                    <option>Yes</option>
-                    <option>No</option>
-                  </select>
-              </div>
+           
             </div>
          </form>
         </div>
@@ -407,38 +401,59 @@
 
 <li class="list-group-item">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-7">
       <div class="panel panel-default">
         <div class="panel-heading font-bold">Level 1</div>
         <div class="panel-body">
           <form class="bs-example form-horizontal comlainform">
 
-            <div class="form-group">
-              <div class="col-lg-2">
-                 <button class="btn btn-sm btn-success btn-rounded">Resolve</button>
-              </div>
-              <label class="col-lg-3 control-label">Complaint Resolved</label>
-              <div class="col-lg-2">
+            <div class="form-group">              
+
+             <label class="col-lg-4 control-label">Cust.Contacted</label>
+              <div class="col-lg-3">
                 <select class="form-control">
                     <option>Yes</option>
                     <option>No</option>
                   </select>
               </div>
+              </div>
 
-               <label class="col-lg-3 control-label">Resoltion Confirmation</label>
-              <div class="col-lg-2">
+              <div class="form-group">
+              
+
+              <label class="col-lg-4 control-label">Complaint Resolved</label>
+              <div class="col-lg-3">
+                <select class="form-control">
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+              </div>
+              </div>
+
+              <div class="form-group">
+               <label class="col-lg-4 control-label">Resoltion Confirmation</label>
+              <div class="col-lg-3">
                <select class="form-control">
                     <option>Yes</option>
                     <option>No</option>
                   </select>
               </div>
+          </div>
+
+              <div class="form-group">
+              <div class="col-lg-3"><button class="btn btn-sm btn-primary btn-rounded">Escalate</button></div>
+                <div class="marginbetween"></div>
+              <!-- <div class="col-lg-3">
+             <button class="btn btn-sm btn-success btn-rounded">Resolve</button>
+            </div> -->
 
             </div>
          </form>
         </div>
       </div>
     </div>
-    <div class="col-sm-4">
+
+    <div class="col-sm-5">
        <div class="panel panel-default">
         <div class="panel-heading font-bold">Remarks:</div>
        <div style="margin-bottom:15px;">
@@ -453,39 +468,58 @@
 
       <li class="list-group-item">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-7">
       <div class="panel panel-default">
         <div class="panel-heading font-bold">Level 2</div>
         <div class="panel-body">
           <form class="bs-example form-horizontal comlainform">
 
             <div class="form-group">
-              <!-- <div class="col-lg-2">
-                 <button class="btn btn-sm btn-success btn-rounded">Resolve</button>
-              </div> -->
+
+             <label class="col-lg-4 control-label">Cust.Contacted</label>
+              <div class="col-lg-3">
+                <select class="form-control">
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+              </div>
+              </div>
+
+              <div class="form-group">
               
-              <label class="col-lg-3 control-label">Complaint Resolved</label>
-              <div class="col-lg-2">
+              <label class="col-lg-4 control-label">Complaint Resolved</label>
+              <div class="col-lg-3">
                 <select class="form-control">
                     <option>Yes</option>
                     <option>No</option>
                   </select>
               </div>
 
-               <label class="col-lg-3 control-label">Resoltion Confirmation</label>
-              <div class="col-lg-2">
+
+            </div>
+            
+              <div class="form-group">
+               <label class="col-lg-4 control-label">Resoltion Confirmation</label>
+              <div class="col-lg-3">
                <select class="form-control">
                     <option>Yes</option>
                     <option>No</option>
                   </select>
               </div>
+          </div>
+              <div class="form-group">
 
-            </div>
+             <div class="col-lg-3"><button class="btn btn-sm btn-primary btn-rounded">Escalate</button></div>
+                <div class="marginbetween"></div>
+              <!-- <div class="col-lg-3">
+             <button class="btn btn-sm btn-success btn-rounded">Resolve</button>
+            </div> -->
+            </div
          </form>
         </div>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-5">
        <div class="panel panel-default">
         <div class="panel-heading font-bold">Remarks:</div>
        <div style="margin-bottom:15px;">
@@ -493,6 +527,46 @@
           Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
         </div>
         </div>
+        </div>
+        </div>
+  </div>
+  </li>
+
+  <li class="list-group-item">
+  <div class="row">
+    <div class="col-sm-7">
+      <div class="panel panel-default">
+        <div class="panel-heading font-bold">Level 3</div>
+        <div class="panel-body">
+          <form class="bs-example form-horizontal comlainform">
+
+            <div class="form-group">
+             <div class="col-lg-3"><button class="btn btn-sm btn-primary btn-rounded" style="font-size:15px;">Resolve</button></div>
+                <div class="marginbetween"></div>
+              <div class="col-lg-3">
+             <button class="btn btn-sm btn-info btn-rounded" style="font-size:15px;">Desolve</button>
+            </div>
+              
+              <!-- <label class="col-lg-4 control-label">Complaint Resolved</label>
+              <div class="col-lg-2">
+                <select class="form-control">
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+              </div> -->
+
+            </div>
+         </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-5">
+
+       <div class="panel panel-default">
+        <div class="panel-heading font-bold">Remarks:</div>
+        <div ui-jq="wysiwyg" class="form-control" style="overflow:scroll;height:150px;max-height:200px">
+             Remarks:&hellip;
+            </div>
         </div>
         </div>
   </div>
