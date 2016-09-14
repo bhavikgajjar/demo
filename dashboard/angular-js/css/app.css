@@ -328,7 +328,12 @@ a.list-group-item.hover {
 .nav > li > a:focus {
   background-color: #3585b3;
 }
-
+.tab-container .nav > li > a:hover {
+  background-color: #d9edf7;
+}
+.tab-container .nav > li.active > a:hover {
+  background-color: #fff;
+}
 .nav.nav-lg > li > a {
   padding: 20px 20px;
 }
@@ -4999,6 +5004,162 @@ a.text-#000000:hover {
   -webkit-animation: movingbar 0.75s infinite;
      -moz-animation: movingbar 0.75s infinite;
           animation: movingbar 0.75s infinite;
+}
+
+.wrapper-md {
+    padding: 15px;
+} 
+/*dashborad css*/
+
+.head-article{
+  border-radius:13px;
+  background-color:#fff;
+  padding-bottom: 15px;
+  width: 90%;
+  margin: 0 auto;
+}
+h2.bg-info:hover {
+  background-color: #19a9d5;
+}
+.head-article h2{
+  width:100%;
+  color:#fff;
+  padding: 12px 10px 5px;
+  border-top-right-radius:13px;
+  border-top-left-radius:13px;
+  font-size:20px;
+  
+}
+.head-article span {
+  float:right;
+}
+.head-article ul{
+  list-style:none;
+}
+.head-article p:before {
+  content: "• ";
+  color: #367fa9; /* or whatever color you prefer */
+  margin-right:5px;
+}
+.head-article p{
+  font-size:20px;
+  color:#1c2a33; 
+  margin:0;
+  margin-left: 10px;
+  
+}
+.inner-article{
+    border-left: 2px solid #23b7e5;
+    margin-left: 15px;
+}
+.head-article .datespan{
+    float: none; 
+    text-align: right;
+    display: block;
+    margin-right:15px;
+}
+.col a:hover {
+    color: #19a9d5;
+}
+
+/*reports page*/
+
+.innerart{
+  text-align: center;
+  background-color: #e4eaec;
+   margin-bottom: 10px;
+}
+.innerart h3{
+  font-size:18px; 
+  padding: 7px 0;
+  margin: 0;
+  font-weight: 400;
+  color: #1c2b36;
+}
+
+.newinner{
+  float:left;
+  background-color: #3c8dbc;
+  width: 50%;
+  border: 5px solid #e4eaec;
+  border-bottom:none;
+  border-left: none;
+}
+.newinner.activate{
+  background-color: #1e282c;
+}
+.newinner:last-child{
+    border-right:none;
+}
+.newinner span{
+  font-size: 24px;
+  color:#fff;
+}
+.newinner p{
+  font-size:18px;
+  color: #fff;
+  margin: 0;
+}
+.maininner{
+    display: inline-block;
+    width: 100%;
+}
+
+#dateform .form-group input{
+  width: 100%;
+}
+
+#dateform .form-group{
+  display:inline-block;
+      margin: 0 10px;
+}
+#dateform .form-group lable{
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+#dateform .btn-sm , .comlainform .btn-sm{
+  padding:3px 12px;
+  font-size: 15px;
+}
+ .comlainform .btn-sm{
+  margin:0 auto;
+  display:block;
+  }
+.form-control[disabled]{
+  cursor: default !important;
+}
+.marginbetween{display: none;}
+
+
+@media only screen and (max-width: 1200px) {
+  .marginbetween{
+    display: block;
+    padding:5px 0;
+    clear: both;
+  }
+  .head-article{
+    width: 100%;
+  }
+  .head-article h2{
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+#dateform .form-group {
+     display: block; 
+     margin: 0 10px 10px 0; 
+}
+#dateform .form-group:nth-child(3),#dateform .form-group:nth-child(4){
+  display: inline-block;
+}
+.newinner p,.innerart h3{
+  font-size: 15px;
+}
+.newinner span{
+  font-size: 22px;
+}
 }
 
 /* Moving bar */
