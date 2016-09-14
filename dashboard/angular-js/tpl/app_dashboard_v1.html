@@ -1,0 +1,83 @@
+<!-- main -->
+  <div class="col">
+    <!-- main header -->
+    <div class="bg-light lter b-b wrapper-md">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+         <a ui-sref="app.dashboard-v1">DashBoard &nbsp;</a><i class="fa fa-angle-right" aria-hidden="true"></i> <a ui-sref="app.dashboard-v1"> Beetle Hotel</a> 
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper-md">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="row">
+           
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="head-article">
+              <a ui-sref="app.report"><h2 class="block bg-info">Beetle Hotel Baroda<span>2.5</span></h2></a>
+               <div class="inner-article">
+                <p>Room Service</p><span class="datespan">Jun 6,2016 - Jun 6,2016</span>
+                <p>Resturants</p><span class="datespan">Jun 6,2016 - Jun 6,2016</span>
+              </div>
+            </article>
+        </div>
+
+         <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="head-article">
+              <a href=""><h2 class="block bg-info">Beetle Hotel Ahmedabad<span>2.5</span></h2></a>
+               <div class="inner-article">
+                <p>Room Service</p><span class="datespan">Jun 6,2016 - Jun 6,2016</span>
+                <p>Resturants</p><span class="datespan">Jun 6,2016 - Jun 6,2016</span>
+              </div>
+            </article>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="head-article">
+              <a href=""><h2 class="block bg-info">Beetle Hotel Rajkot<span>2.5</span></h2></a>
+               <div class="inner-article">
+                <p>Room Service</p><span class="datespan">Jun 6,2016 - Jun 6,2016</span>
+                <p>Resturants</p><span class="datespan">Jun 6,2016 - Jun 6,2016</span>
+              </div>
+            </article>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper-md">
+  <div ng-controller="FlotChartDemoCtrl">
+  <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading font-bold">Overall Organizational Performance</div>
+          <div class="panel-body">
+            <div ui-jq="plot" ui-options="
+              [
+                { data: {{d0_1}}, label: 'US', points: { show: true }, lines: { show: true, fill: true, fillColor: { colors: [{ opacity: 0.2}, { opacity: 0.2}] } } }, 
+                { data: {{d0_2}}, label: 'INDUSTRY', points: { show: true }, lines: { show: true} }
+              ],
+              {
+                colors: [ '{{app.color.success}}','{{app.color.danger}}' ],
+                series: { shadowSize: 3 },
+                xaxis:{ font: { color: '#869fb1' } },
+                yaxis:{ font: { color: '#869fb1' } },
+                grid: { hoverable: true, clickable: true, borderWidth: 0, color: '#869fb1' },
+                tooltip: true,
+                tooltipOpts: { content: '%s of %x.1 is %y.4',  defaultTheme: false, shifts: { x: 0, y: 20 } }
+              }
+            " style="height:240px"></div>
+          </div>                  
+        </div>
+      </div>
+</div>
+</div>
+</div>
+
+
+

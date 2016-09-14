@@ -1,7 +1,42 @@
-
 <div class="wrapper-md">
-  
-  
+<div class="row">
+    <div class="col-lg-8 col-md-6 col-sm-12">
+      <div class="panel panel-default">
+        <div class="panel-heading font-bold">History</div>
+        <div class="panel-body">
+          <form class="bs-example form-horizontal">
+            <div class="form-group">
+              <label class="col-lg-2 col-sm-4 control-label">From date:</label>
+              <div class="col-lg-4 col-sm-6">
+                <input type="text" class="form-control" placeholder="From Date" >
+              </div>
+              <div class="marginbetween"></div>
+              <label class="col-lg-2 col-sm-4 control-label">Till date:</label>
+              <div class="col-lg-4 col-sm-6">
+                <input type="text" class="form-control" placeholder="Till Date" >
+              </div>
+            </div>
+         </form>
+        </div>
+      </div>
+    </div>
+  <!-- <div class="col-lg-4 col-md-6 col-sm-12"> 
+    <div class="panel panel-default">
+        <div class="panel-heading font-bold">                    
+          <i class="fa fa-comments-o fa-fw m-r-xs"></i>Compalint text
+        </div>
+        <div style="margin-bottom:15px;">
+        <div class="panel-body" ui-jq="slimScroll" ui-options="{height:'100px', size:'8px'}">
+          <div class="media">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </div>
+        </div>
+        </div>
+    </div>
+</div> -->
+</div>
+
+
   <tabset class="tab-container">
     <tab>
       <tab-heading>
@@ -10,10 +45,10 @@
       <ul class="list-group no-borders pull-in m-b-none">
         <li class="list-group-item">
           <div class="panel panel-default">
-    <div class="panel-heading">
-      Responsive Table
+    <div class="panel-heading font-bold">
+      Tickets List:
     </div>
-   
+    
     <div class="table-responsive">
       <table class="table table-striped b-t b-light">
         <thead>
@@ -22,8 +57,8 @@
               Id
             </th>
             <th>Cust.name</th>
-            <th>Compalint date</th>
             <th>Compalint status</th>
+            <th>Compalint date</th>
             <th>Resolution date</th>
             <th>Place</th>
             <th>Customer Email</th>
@@ -32,39 +67,39 @@
         </thead>
         <tbody>
           <tr>
-            <td>1</td>
-            <td>Anil K</td>
+              <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
+            <td><a href="#">Anil K</a></td>
             <td>Pending</td>
-            <td>Jul 25, 2016</td>
-            <td>Aug 25, 2013</td>
+            <td>Oct 16, 2016</td>
+            <td>Oct 25, 2016</td>
             <td>Ahmedabad</td>
-            <td>a@gmail.com</td>
+            <td>anil@gmail.com</td>
             <td>
              9898989898
             </td>
           </tr>
           <tr>
-             <td>2</td>
-            <td>Anil K</td>
+               <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
+            <td><a href="#">P Patel</a></td>
             <td>Pending</td>
-            <td>Jul 25, 2016</td>
-            <td>Aug 25, 2013</td>
+            <td>Oct 16, 2016</td>
+            <td>Oct 25, 2016</td>
             <td>Ahmedabad</td>
-            <td>a@gmail.com</td>
+            <td>patel@gmail.com</td>
             <td>
              9898989898
             </td>
           </tr>
           <tr>
-             <td>3</td>
-            <td>Anil K</td>
+              <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
+            <td><a href="#">D Jones</a></td>
             <td>Pending</td>
-            <td>Jul 25, 2016</td>
-            <td>Aug 25, 2013</td>
+            <td>Oct 16, 2016</td>
+            <td>Oct 25, 2016</td>
             <td>Ahmedabad</td>
-            <td>a@gmail.com</td>
+            <td>joney@gmail.com</td>
             <td>
-             9898989898
+            9898989898
             </td>
           </tr>
     
@@ -75,7 +110,7 @@
       <div class="row">
         
         <div class="col-sm-12 text-right text-center-xs">                
-          <ul class="pagination pagination-sm m-t-none m-b-none">
+          <!-- <ul class="pagination pagination-sm m-t-none m-b-none">
             <li><a href><i class="fa fa-chevron-left"></i></a></li>
             <li><a href>1</a></li>
             <li><a href>2</a></li>
@@ -83,7 +118,7 @@
             <li><a href>4</a></li>
             <li><a href>5</a></li>
             <li><a href><i class="fa fa-chevron-right"></i></a></li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </footer>
@@ -100,36 +135,40 @@
 
 
   <div class="row">
-    <div class="col-sm-7">
+    <div class="col-sm-12">
       <div class="panel panel-default">
         <div class="panel-heading font-bold">Header</div>
         <div class="panel-body">
           <form class="bs-example form-horizontal">
             <div class="form-group">
-              <label class="col-lg-3 control-label">Contract Name</label>
-              <div class="col-lg-9">
+              <label class="col-lg-2 control-label">Contract Name</label>
+              <div class="col-lg-4">
                 <input type="text" class="form-control" placeholder="text" value="Hotel XYZ" disabled>
               </div>
-            </div>
-            <div class="form-group">
-              <label class="col-lg-3 control-label">Customer Name</label>
-              <div class="col-lg-9">
-                <input type="text" class="form-control" placeholder="text" value="Anil k" disabled>
+           
+              <label class="col-lg-2 control-label">Customer Name</label>
+              <div class="col-lg-4">
+                <input type="text" class="form-control" placeholder="" value="" disabled>
               </div>
             </div>
 
             <div class="form-group">
-              <label class="col-lg-3 control-label">CustomerEmail</label>
-              <div class="col-lg-9">
+              <label class="col-lg-2 control-label">CustomerEmail</label>
+              <div class="col-lg-4">
                 <input type="text" class="form-control" placeholder="text" value="anil.k@gmail.com" disabled>
               </div>
-            </div>
-            <div class="form-group">
-              <label class="col-lg-3 control-label">Customer No.</label>
-              <div class="col-lg-9">
-                <input type="text" class="form-control" placeholder="text" value="91 9898989898ss" disabled>
+            
+              <label class="col-lg-2 control-label">Customer No.</label>
+              <div class="col-lg-4">
+                <input type="text" class="form-control" placeholder="text" value="91 9898989898" disabled>
               </div>
             </div>
+             <div class="form-group">
+             <label class="col-lg-2 control-label">Customer Id</label>
+              <div class="col-lg-4">
+                <input type="text" class="form-control" placeholder="text" value="1565485" disabled>
+              </div>
+             </div>
          </form>
         </div>
       </div>
@@ -149,43 +188,43 @@
             <div class="form-group">
               <label class="col-lg-2 control-label">Type</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" placeholder="text" value="Hotel XYZ" disabled>
+                <input type="text" class="form-control" placeholder="text" value="Service" disabled>
               </div>
            
             <label class="col-lg-2 control-label">Sub Type</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" placeholder="text" value="Anil k" disabled>
+                <input type="text" class="form-control" placeholder="text" value="Deliver Time" disabled>
               </div>
             </div>
 
             <div class="form-group">
               <label class="col-lg-2 control-label">Start date</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" placeholder="text" value="Hotel XYZ" disabled>
+                <input type="text" class="form-control" placeholder="text" value="8 Dec 2014" disabled>
               </div>
            
             <label class="col-lg-2 control-label">Start Time</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" placeholder="text" value="Anil k" disabled>
+                <input type="text" class="form-control" placeholder="text" value="14:25 PM" disabled>
               </div>
             </div>
 
              <div class="form-group">
               <label class="col-lg-2 control-label">T.A.T</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" placeholder="text" value="Hotel XYZ" disabled>
+                <input type="text" class="form-control" placeholder="text" value="12 Hours" disabled>
               </div>
            
             <label class="col-lg-2 control-label">E.A.T</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" placeholder="text" value="Anil k" disabled>
+                <input type="text" class="form-control" placeholder="text" value="-407 Hours" disabled>
               </div>
             </div>
 
              <div class="form-group">
               <label class="col-lg-2 control-label">Status</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" placeholder="text" value="Hotel XYZ" disabled>
+                <input type="text" class="form-control" placeholder="text" value="Pending" disabled>
               </div>
            
             <label class="col-lg-2 control-label">Cust.Contacted</label>
@@ -205,30 +244,35 @@
 
  <li class="list-group-item">
   <div class="row">
-    <div class="col-sm-12">
+    <div class="col-sm-8">
       <div class="panel panel-default">
         <div class="panel-heading font-bold">Complaint Escalation</div>
         <div class="panel-body">
           <form class="bs-example form-horizontal">
 
             <div class="form-group">
-              <label class="col-lg-2 control-label">Escalate</label>
+              <!-- <div class="col-lg-2"><button class="btn btn-sm btn-primary btn-rounded">Escalate</button></div>
+                <div class="marginbetween"></div>
               <div class="col-lg-2">
-              <select class="form-control">
+             <button class="btn btn-sm btn-success btn-rounded">Resolve</button>
+            </div> -->
+
+            <label class="col-lg-2 control-label">Escalate</label>
+              <div class="col-lg-2">
+               <select class="form-control">
                     <option>Yes</option>
                     <option>No</option>
                   </select>
-
               </div>
            
-              <label class="col-lg-2 control-label">Date</label>
-              <div class="col-lg-2">
-                <input type="text" class="form-control" placeholder="text" value="Anil k" disabled>
+              <label class="col-lg-1 control-label">Date</label>
+              <div class="col-lg-3">
+                <input type="text" class="form-control" placeholder="text" value="10 Dec 2014" disabled>
               </div>
 
                <label class="col-lg-2 control-label">Pending For</label>
               <div class="col-lg-2">
-                <input type="text" class="form-control" placeholder="text" value="Anil k" disabled>
+                <input type="text" class="form-control" placeholder="text" value="388 Hours" disabled>
               </div>
 
             </div>
@@ -236,6 +280,21 @@
         </div>
       </div>
     </div>
+    <div class="col-lg-4 col-md-6 col-sm-12"> 
+    <div class="panel panel-default">
+        <div class="panel-heading font-bold">                    
+          <i class="fa fa-comments-o fa-fw m-r-xs"></i>Compalint text
+        </div>
+        <div style="margin-bottom:15px;">
+        <div class="panel-body" ui-jq="slimScroll" ui-options="{height:'100px', size:'8px'}">
+          <div class="media">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </div>
+        </div>
+        </div>
+    </div>
+</div> 
+
   </div>
   </li>
   <li class="list-group-item">
@@ -270,7 +329,7 @@
 
             <div class="form-group">
               <label class="col-lg-2 control-label">Customer Name</label>
-              <div class="col-lg-10">
+              <div class="col-lg-4">
                 <input type="text" class="form-control" placeholder="text" value="Anil K" disabled>
               </div>
             </div>
@@ -278,43 +337,43 @@
 
             <label class="col-lg-2 control-label">Type</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" placeholder="text" value="Anil k" disabled>
+                <input type="text" class="form-control" placeholder="text" value="Service" disabled>
               </div>
 
             <label class="col-lg-2 control-label">Sub Type</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" placeholder="text" value="Anil k" disabled>
+                <input type="text" class="form-control" placeholder="text" value="Deliver Time" disabled>
               </div>
             </div>
 
             <div class="form-group">
               <label class="col-lg-2 control-label">Start date</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" placeholder="text" value="Hotel XYZ" disabled>
+                <input type="text" class="form-control" placeholder="text" value="8 Dec 2014" disabled>
               </div>
            
             <label class="col-lg-2 control-label">Start Time</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" placeholder="text" value="Anil k" disabled>
+                <input type="text" class="form-control" placeholder="text" value="14:25 PM" disabled>
               </div>
             </div>
 
              <div class="form-group">
               <label class="col-lg-2 control-label">T.A.T</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" placeholder="text" value="Hotel XYZ" disabled>
+                <input type="text" class="form-control" placeholder="text" value="12 Hours" disabled>
               </div>
            
             <label class="col-lg-2 control-label">E.A.T</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" placeholder="text" value="Anil k" disabled>
+                <input type="text" class="form-control" placeholder="text" value="-407 Hours" disabled>
               </div>
             </div>
 
              <div class="form-group">
               <label class="col-lg-2 control-label">Status</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" placeholder="text" value="Hotel XYZ" disabled>
+                <input type="text" class="form-control" placeholder="text" value="Pending" disabled>
               </div>
            
             <label class="col-lg-2 control-label">Cust.Contacted</label>
@@ -331,27 +390,34 @@
     </div>
     </div>
   </li>
+<li class="list-group-item">
+            <div class="row">
+        <div class="col-sm-12">
+       <div class="panel panel-default">
+        <div class="panel-heading font-bold">  <i class="fa fa-comments-o fa-fw m-r-xs"></i>Compalint text</div>
+        <div style="margin-bottom:15px;">
+        <div class="panel-body" ui-jq="slimScroll" ui-options="{height:'100px', size:'8px'}">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+</li>
 
-
-         <li class="list-group-item">
+<li class="list-group-item">
   <div class="row">
-    <div class="col-sm-12">
+    <div class="col-sm-8">
       <div class="panel panel-default">
         <div class="panel-heading font-bold">Level 1</div>
         <div class="panel-body">
-          <form class="bs-example form-horizontal">
+          <form class="bs-example form-horizontal comlainform">
 
             <div class="form-group">
-              <label class="col-lg-2 control-label">Cust.Contacted</label>
               <div class="col-lg-2">
-              <select class="form-control">
-                    <option>Yes</option>
-                    <option>No</option>
-                  </select>
-
+                 <button class="btn btn-sm btn-success btn-rounded">Resolve</button>
               </div>
-           
-              <label class="col-lg-2 control-label">Complaint Resolved</label>
+              <label class="col-lg-3 control-label">Complaint Resolved</label>
               <div class="col-lg-2">
                 <select class="form-control">
                     <option>Yes</option>
@@ -359,7 +425,7 @@
                   </select>
               </div>
 
-               <label class="col-lg-2 control-label">Resoltion Confirmation</label>
+               <label class="col-lg-3 control-label">Resoltion Confirmation</label>
               <div class="col-lg-2">
                <select class="form-control">
                     <option>Yes</option>
@@ -372,30 +438,43 @@
         </div>
       </div>
     </div>
+    <div class="col-sm-4">
+       <div class="panel panel-default">
+        <div class="panel-heading font-bold">Remarks:</div>
+       <div style="margin-bottom:15px;">
+        <div class="panel-body" ui-jq="slimScroll" ui-options="{height:'100px', size:'8px'}">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        </div>
+        </div>
+        </div>
+        </div>
   </div>
   </li>
 
       <li class="list-group-item">
   <div class="row">
-    <div class="col-sm-12">
+    <div class="col-sm-8">
       <div class="panel panel-default">
         <div class="panel-heading font-bold">Level 2</div>
         <div class="panel-body">
-          <form class="bs-example form-horizontal">
+          <form class="bs-example form-horizontal comlainform">
 
             <div class="form-group">
-              <label class="col-lg-2 control-label">Escalation Raised</label>
+              <!-- <div class="col-lg-2">
+                 <button class="btn btn-sm btn-success btn-rounded">Resolve</button>
+              </div> -->
+              
+              <label class="col-lg-3 control-label">Complaint Resolved</label>
               <div class="col-lg-2">
-              <select class="form-control">
+                <select class="form-control">
                     <option>Yes</option>
                     <option>No</option>
                   </select>
-
               </div>
-           
-              <label class="col-lg-2 control-label">Complaint Resolved</label>
+
+               <label class="col-lg-3 control-label">Resoltion Confirmation</label>
               <div class="col-lg-2">
-                <select class="form-control">
+               <select class="form-control">
                     <option>Yes</option>
                     <option>No</option>
                   </select>
@@ -406,21 +485,19 @@
         </div>
       </div>
     </div>
-  </div>
-  </li>
-
-        <li class="list-group-item">
-            <div class="row">
-        <div class="col-sm-12">
+    <div class="col-sm-4">
        <div class="panel panel-default">
         <div class="panel-heading font-bold">Remarks:</div>
-        <div class="panel-body">
+       <div style="margin-bottom:15px;">
+        <div class="panel-body" ui-jq="slimScroll" ui-options="{height:'100px', size:'8px'}">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
         </div>
         </div>
         </div>
         </div>
-        </li>
+  </div>
+  </li>
+
       </ul>
     </tab>
   </tabset>
