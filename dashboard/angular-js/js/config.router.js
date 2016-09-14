@@ -28,11 +28,12 @@ angular.module('app')
                   url: '/dashboard-v1',
                   templateUrl: 'tpl/app_dashboard_v1.html',
                   resolve: {
-                    deps: ['$ocLazyLoad',
-                      function( $ocLazyLoad ){
-                        return $ocLazyLoad.load(['js/controllers/chart.js']);
-                    }]
+                      deps: ['uiLoad',
+                        function( uiLoad){
+                          return uiLoad.load('js/controllers/chart.js');
+                      }]
                   }
+                  
               })
               .state('app.dashboard-v2', {
                   url: '/dashboard-v2',
@@ -290,245 +291,47 @@ angular.module('app')
                   url: '/search',
                   templateUrl: 'tpl/page_search.html'
               })
-              .state('app.page.invoice', {
-                  url: '/invoice',
-                  templateUrl: 'tpl/page_invoice.html'
-              })
-              .state('app.page.price', {
-                  url: '/price',
-                  templateUrl: 'tpl/page_price.html'
-              })
-              .state('app.docs', {
-                  url: '/docs',
-                  templateUrl: 'tpl/docs.html'
-              })
-              // others
-              .state('lockme', {
-                  url: '/lockme',
-                  templateUrl: 'tpl/page_lockme.html'
-              })
-              .state('access', {
-                  url: '/access',
-                  template: '<div ui-view class="fade-in-right-big smooth"></div>'
-              })
-              .state('access.signin', {
-                  url: '/signin',
-                  templateUrl: 'tpl/page_signin.html',
+              .state('app.report', {
+                  url: '/report',
+                  templateUrl: 'tpl/report.html',
                   resolve: {
                       deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/controllers/signin.js'] );
+                        function( uiLoad){
+                          return uiLoad.load('js/controllers/chart.js');
                       }]
                   }
               })
-              .state('access.signup', {
-                  url: '/signup',
-                  templateUrl: 'tpl/page_signup.html',
+              .state('app.details', {
+                  url: '/details',
+                  templateUrl: 'tpl/details.html',
                   resolve: {
                       deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/controllers/signup.js'] );
+                        function( uiLoad){
+                          return uiLoad.load('js/controllers/chart.js');
                       }]
                   }
               })
-              .state('access.forgotpwd', {
-                  url: '/forgotpwd',
-                  templateUrl: 'tpl/page_forgotpwd.html'
-              })
-              .state('access.404', {
-                  url: '/404',
-                  templateUrl: 'tpl/page_404.html'
-              })
-
-              // fullCalendar
-              .state('app.calendar', {
-                  url: '/calendar',
-                  templateUrl: 'tpl/app_calendar.html',
-                  // use resolve to load other dependences
-                  resolve: {
-                      deps: ['$ocLazyLoad', 'uiLoad',
-                        function( $ocLazyLoad, uiLoad ){
-                          return uiLoad.load(
-                            ['vendor/jquery/fullcalendar/fullcalendar.css',
-                              'vendor/jquery/fullcalendar/theme.css',
-                              'vendor/jquery/jquery-ui-1.10.3.custom.min.js',
-                              'vendor/libs/moment.min.js',
-                              'vendor/jquery/fullcalendar/fullcalendar.min.js',
-                              'js/app/calendar/calendar.js']
-                          ).then(
-                            function(){
-                              return $ocLazyLoad.load('ui.calendar');
-                            }
-                          )
-                      }]
-                  }
-              })
-
-              // mail
-              .state('app.mail', {
-                  abstract: true,
-                  url: '/mail',
-                  templateUrl: 'tpl/mail.html',
-                  // use resolve to load other dependences
+               .state('app.average', {
+                  url: '/average',
+                  templateUrl: 'tpl/average.html',
                   resolve: {
                       deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/app/mail/mail.js',
-                                               'js/app/mail/mail-service.js',
-                                               'vendor/libs/moment.min.js'] );
+                        function( uiLoad){
+                          return uiLoad.load('js/controllers/chart.js');
                       }]
                   }
               })
-              .state('app.mail.list', {
-                  url: '/inbox/{fold}',
-                  templateUrl: 'tpl/mail.list.html'
-              })
-              .state('app.mail.detail', {
-                  url: '/{mailId:[0-9]{1,4}}',
-                  templateUrl: 'tpl/mail.detail.html'
-              })
-              .state('app.mail.compose', {
-                  url: '/compose',
-                  templateUrl: 'tpl/mail.new.html'
-              })
-
-              .state('layout', {
-                  abstract: true,
-                  url: '/layout',
-                  templateUrl: 'tpl/layout.html'
-              })
-              .state('layout.fullwidth', {
-                  url: '/fullwidth',
-                  views: {
-                      '': {
-                          templateUrl: 'tpl/layout_fullwidth.html'
-                      },
-                      'footer': {
-                          templateUrl: 'tpl/layout_footer_fullwidth.html'
-                      }
-                  },
+               .state('app.guest', {
+                  url: '/guest',
+                  templateUrl: 'tpl/guest.html',
                   resolve: {
                       deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/controllers/vectormap.js'] );
+                        function( uiLoad){
+                          return uiLoad.load('js/controllers/chart.js');
                       }]
                   }
               })
-              .state('layout.mobile', {
-                  url: '/mobile',
-                  views: {
-                      '': {
-                          templateUrl: 'tpl/layout_mobile.html'
-                      },
-                      'footer': {
-                          templateUrl: 'tpl/layout_footer_mobile.html'
-                      }
-                  }
-              })
-              .state('layout.app', {
-                  url: '/app',
-                  views: {
-                      '': {
-                          templateUrl: 'tpl/layout_app.html'
-                      },
-                      'footer': {
-                          templateUrl: 'tpl/layout_footer_fullwidth.html'
-                      }
-                  },
-                  resolve: {
-                      deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/controllers/tab.js'] );
-                      }]
-                  }
-              })
-              .state('apps', {
-                  abstract: true,
-                  url: '/apps',
-                  templateUrl: 'tpl/layout.html'
-              })
-              .state('apps.note', {
-                  url: '/note',
-                  templateUrl: 'tpl/apps_note.html',
-                  resolve: {
-                      deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/app/note/note.js',
-                                               'vendor/libs/moment.min.js'] );
-                      }]
-                  }
-              })
-              .state('apps.contact', {
-                  url: '/contact',
-                  templateUrl: 'tpl/apps_contact.html',
-                  resolve: {
-                      deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/app/contact/contact.js'] );
-                      }]
-                  }
-              })
-              .state('app.weather', {
-                  url: '/weather',
-                  templateUrl: 'tpl/apps_weather.html',
-                  resolve: {
-                      deps: ['$ocLazyLoad',
-                        function( $ocLazyLoad ){
-                          return $ocLazyLoad.load(
-                              {
-                                  name: 'angular-skycons',
-                                  files: ['js/app/weather/skycons.js',
-                                          'vendor/libs/moment.min.js', 
-                                          'js/app/weather/angular-skycons.js',
-                                          'js/app/weather/ctrl.js' ] 
-                              }
-                          );
-                      }]
-                  }
-              })
-              .state('music', {
-                  url: '/music',
-                  templateUrl: 'tpl/music.html',
-                  controller: 'MusicCtrl',
-                  resolve: {
-                      deps: ['$ocLazyLoad',
-                        function( $ocLazyLoad ){
-                          return $ocLazyLoad.load([
-                            'com.2fdevs.videogular', 
-                            'com.2fdevs.videogular.plugins.controls', 
-                            'com.2fdevs.videogular.plugins.overlayplay',
-                            'com.2fdevs.videogular.plugins.poster',
-                            'com.2fdevs.videogular.plugins.buffering',
-                            'js/app/music/ctrl.js', 
-                            'js/app/music/theme.css'
-                          ]);
-                      }]
-                  }
-              })
-                .state('music.home', {
-                    url: '/home',
-                    templateUrl: 'tpl/music.home.html'
-                })
-                .state('music.genres', {
-                    url: '/genres',
-                    templateUrl: 'tpl/music.genres.html'
-                })
-                .state('music.detail', {
-                    url: '/detail',
-                    templateUrl: 'tpl/music.detail.html'
-                })
-                .state('music.mtv', {
-                    url: '/mtv',
-                    templateUrl: 'tpl/music.mtv.html'
-                })
-                .state('music.mtvdetail', {
-                    url: '/mtvdetail',
-                    templateUrl: 'tpl/music.mtv.detail.html'
-                })
-                .state('music.playlist', {
-                    url: '/playlist/{fold}',
-                    templateUrl: 'tpl/music.playlist.html'
-                })
+              
       }
     ]
   );
