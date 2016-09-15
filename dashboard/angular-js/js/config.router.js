@@ -331,6 +331,12 @@ angular.module('app')
                       }]
                   }
               })
+
+               .state('app.page.reports', {
+                  url: '/reports',
+                  templateUrl: 'tpl/main-reports.html',
+                 
+              })
               
       }
     ]
