@@ -3683,6 +3683,10 @@ fieldset[disabled] .i-checks input + i:before {
   background-color: #3c8dbc;
 }
 
+.bg-beatle-dark {
+    background: #367fa9;
+}
+
 .bg-white-opacity {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -5139,6 +5143,45 @@ h2.bg-info:hover {
   font-weight: bold;
 }
 
+.nav .btn:hover,.nav .btn:focus,.nav .btn{
+  color:#fff !important;
+}
+
+.hidden-folded-small img{
+  width: 40px;
+}
+.hidden-folded-small{
+  display: none;
+}
+.app-aside-folded .hidden-folded-small {
+    display: block !important;
+}
+.sidebarsubmenu{
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 25px;
+}
+.sidebarsubmenu span{
+  margin-left: 15px;
+  float: right;
+}
+.bg-black .nav > li.active > a > .my-icon {
+    position: relative !important;
+    float: right !important;
+    right: 25px !important;
+    overflow: inherit !important;
+}
+.bg-black .nav > li.active > a > .my-icon > i {
+    position: absolute !important;
+    display: inline-block !important;
+    width: 0 !important;
+    height: 0 !important;
+    line-height: 0 !important;
+    border: 24px solid transparent !important;
+    border-right: 35px solid #ecf0f5 !important;
+    left: 32px !important;
+    top: 0px !important;
+}
 @media only screen and (max-width: 1200px) {
   .marginbetween{
     display: block;

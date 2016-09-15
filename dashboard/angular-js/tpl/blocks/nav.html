@@ -5,24 +5,40 @@
     <span translate="aside.nav.HEADER">Navigation</span>
   </li> -->
       <li ui-sref-active="active">
-        <a ui-sref="app.dashboard-v1">
+        <a ui-sref="app.dashboard-v1" >
         <i class="glyphicon glyphicon-dashboard"></i>
           <span>Dashboard</span>
+          <i class="my-icon"><i></i></i>
         </a>
       
   </li>
   <li ui-sref-active="active">
-    <a ui-sref="app.page.search">
+    <a ui-sref="app.page.search" class="auto">
+    <!-- <span class="pull-right text-muted">
+        <i class="fa fa-fw fa-angle-right text"></i>
+        <i class="fa fa-fw fa-angle-down text-active"></i>
+      </span> -->
       <i class="glyphicon glyphicon-bell"></i>
-
       <span >Tickets</span>
+      <i class="my-icon"><i></i></i>
     </a>
+    <ul class="nav nav-sub dk">
+      <li class="nav-sub-header">
+        <a ui-sref="app.page.search">
+          <span>Tickets</span>
+        </a>
+      </li>
+      <li ui-sref-active="active"><div class="sidebarsubmenu">All <span>19</span></div></li>
+      <li ui-sref-active="active"><div class="sidebarsubmenu">Pending <span>04</span></div></li>
+      <li ui-sref-active="active"><div class="sidebarsubmenu">Resolved <span>15</span></div></li>
+    </ul>
   </li>
 
   <li ui-sref-active="active">
     <a ui-sref="app.page.reports">
       <i class="glyphicon glyphicon-file"></i>
       <span>Reports</span>
+      <i class="my-icon"><i></i></i>
     </a>
   </li>
 
