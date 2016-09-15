@@ -5066,8 +5066,9 @@ h2.bg-info:hover {
 
 .innerart{
   text-align: center;
-  background-color: #e4eaec;
-   margin-bottom: 10px;
+  background-color: #d9edf7;
+  border: 1px solid #bce8f1;
+  margin-bottom: 10px;
 }
 .innerart h3{
   font-size:18px; 
@@ -5081,12 +5082,12 @@ h2.bg-info:hover {
   float:left;
   background-color: #3c8dbc;
   width: 50%;
-  border: 5px solid #e4eaec;
+  border: 5px solid #fff;
   border-bottom:none;
   border-left: none;
 }
 .newinner.activate{
-  background-color: #1e282c;
+  background-color: #1c2b36;
 }
 .newinner:last-child{
     border-right:none;
@@ -5130,12 +5131,18 @@ h2.bg-info:hover {
   cursor: default !important;
 }
 .marginbetween{display: none;}
-
+.table.table-striped.m-b-none tr:hover td{
+  background-color: #dff0d8;
+}
+.status-pending input{
+  color: #ee3939;
+  font-weight: bold;
+}
 
 @media only screen and (max-width: 1200px) {
   .marginbetween{
     display: block;
-    padding:5px 0;
+    padding:7px 0;
     clear: both;
   }
   .head-article{
@@ -5144,6 +5151,9 @@ h2.bg-info:hover {
   .head-article h2{
     font-size: 17px;
   }
+  #dateform .form-group {
+    margin:0 5px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -5151,6 +5161,7 @@ h2.bg-info:hover {
      display: block; 
      margin: 0 10px 10px 0; 
 }
+
 #dateform .form-group:nth-child(3),#dateform .form-group:nth-child(4){
   display: inline-block;
 }
@@ -5160,8 +5171,10 @@ h2.bg-info:hover {
 .newinner span{
   font-size: 22px;
 }
+.comlainform .btn-sm {
+    margin: 20px auto 0;
 }
-
+}
 /* Moving bar */
 
 @-webkit-keyframes movingbar {
