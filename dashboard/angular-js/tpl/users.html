@@ -1,0 +1,148 @@
+<!-- main -->
+<div class="col">
+  <div class="bg-light lter b-b wrapper-md">
+    <h1 class="font-thin h4"><a ui-sref="app.page.users"> Users</a></h1>
+  </div>
+</div>
+<div class="wrapper-md">
+  <div class="panel panel-default">
+    <div class="panel-heading font-bold">
+      User Details
+    </div>
+    <div class="panel-body b-b b-light">
+      Search: <input id="filter" type="text" class="form-control input-sm w-sm inline m-r"/>
+    </div>
+    <div>
+      <table class="table m-b-none" ui-jq="footable" data-filter="#filter" data-page-size="7">
+        <thead>
+          <tr>
+            <th data-hide="phone">
+              Id
+            </th>
+            <th data-toggle="true">
+              User Name
+            </th>
+            <th data-hide="phone">
+              Full Name 
+            </th>
+            <th data-hide="tablet">
+              Email-Id
+            </th>
+            <th data-hide="phone,tablet">
+             Occupation
+           </th>
+           <th data-hide="phone">
+            User Number
+          </th>
+          <th data-hide="phone,tablet">
+           Location
+         </th>
+       </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>1</td>
+       <td><a ui-sref="app.profile">Boudreaux</a></td>
+       <td>Isidra Boudreaux</td>
+       <td>isidra@gmail.com</td>
+       <td>Traffic Court Referee</td>
+       <td data-value="78025368997">78025368997</td>
+       <td>London, UK</td>
+     </tr>
+     <tr>
+       <td>2</td>	
+       <td><a ui-sref="app.profile">Woldt</a></td>
+       <td>Woldt Shona</td>
+       <td>Shona@gmail.com</td>
+       <td>Airline Transport Pilot</td>
+       <td data-value="370961043292">370961043292</td>
+       <td>London, UK</td>
+       
+     </tr>
+     <tr>
+       <td>3</td>
+       <td><a ui-sref="app.profile">Leonardo</a></td>
+       <td>Leonardo Granville</td>
+       <td>Gran@yahoo.in</td>
+       <td>Business Services Sales Representative</td>
+       <td data-value="-22133780420">22133780420</td>
+       <td>London, UK</td>
+       
+     </tr>
+     <tr>
+      <td>4</td>
+      <td><a ui-sref="app.profile">Dragoo</a></td>
+      <td>Easer Dragoo</td>
+      <td>eraser@hotmail.com</td>
+      <td>Drywall Stripper</td>
+      <td data-value="250833505574">250833505574</td>
+      <td>London, UK</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a ui-sref="app.profile">Halladay</a></td>
+      <td>Halladay Maple</td>
+      <td>hamaple@gmail.com</td>
+      <td>Aviation Tactical Readiness Officer</td>
+      <td data-value="694116650726">694116650726</td>
+      <td>London, UK</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a ui-sref="app.profile">Woldt</a></td>
+      <td>Maxine Woldt</td>
+      <td>maxina@yahoo.com</td>
+      <td>Business Services Sales Representative</td>
+      <td data-value="561440464855">561440464855</td>
+      <td>London, UK</td>
+    </tr>
+    <tr>
+     <td>7</td>
+     <td><a ui-sref="app.profile">Mcgaughy</a></td>
+     <td>Lorraine Mcgaughy</td>
+     <td>lomac@gmail.com</td>
+     <td>Hemodialysis Technician</td>
+     <td data-value="437400551390">437400551390</td>
+     <td>London, UK</td>
+   </tr>
+   <tr>
+    <td>8</td>
+    <td><a ui-sref="app.profile">Goodlow</a></td>
+    <td>Lizze Goodlow</td>             
+    <td>Lowlizzee@hotmail.com</td>
+    <td>Technical Services Librarian</td>
+    <td data-value="-257733999319">257733999319</td>
+    <td>London, UK</td>
+    
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><a ui-sref="app.profile">Badgett</a></td>
+    <td>Badgett Judi</td>
+    <td>Judi@yahoo.com</td>
+    <td>Electrical Lineworker</td>
+    <td data-value="362134712000">362134712000</td>
+    <td>London, UK</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><a ui-sref="app.profile">Hyland</a></td>
+    <td>Hyland Lauri</td>
+    <td>Lauri@gmail.com</td>
+    <td>Blackjack Supervisor</td>
+    <td data-value="500874333932">500874333932</td>
+    <td>London, UK</td>
+    
+  </tr>
+</tbody>
+<tfoot class="hide-if-no-paging">
+  <tr>
+    <td colspan="5" class="text-center">
+      <ul class="pagination"></ul>
+    </td>
+  </tr>
+</tfoot>
+</table>
+</div>
+</div>
+</div>

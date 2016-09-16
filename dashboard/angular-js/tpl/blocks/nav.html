@@ -4,13 +4,20 @@
   <!-- <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
     <span translate="aside.nav.HEADER">Navigation</span>
   </li> -->
-      <li ui-sref-active="active">
-        <a ui-sref="app.dashboard-v1" >
-        <i class="glyphicon glyphicon-dashboard"></i>
+  <li ui-sref-active="active">
+    <a ui-sref="app.dashboard-v1" >
+      <i class="fa fa-dashboard"></i>
+      <span>Dashboard</span>
+      <i class="my-icon"><i></i></i>
+    </a>
+    <ul class="nav nav-sub dk">
+      <li class="nav-sub-header">
+        <a ui-sref="app.dashboard-v1">
           <span>Dashboard</span>
-          <i class="my-icon"><i></i></i>
         </a>
-      
+      </li>
+    </ul>
+    
   </li>
   <li ui-sref-active="active">
     <a ui-sref="app.page.search" class="auto">
@@ -18,7 +25,7 @@
         <i class="fa fa-fw fa-angle-right text"></i>
         <i class="fa fa-fw fa-angle-down text-active"></i>
       </span> -->
-      <i class="glyphicon glyphicon-bell"></i>
+      <i class="icon-bell"></i>
       <span >Tickets</span>
       <i class="my-icon"><i></i></i>
     </a>
@@ -31,16 +38,38 @@
       <li ui-sref-active="active"><a class="sidebarsubmenu">All <span>19</span></a></li>
       <li ui-sref-active="active"><a class="sidebarsubmenu">Pending <span>04</span></a></li>
       <li ui-sref-active="active"><a class="sidebarsubmenu">Resolved <span>15</span></a></li>
-      <li ui-sref-active="active"><a class="sidebarsubmenu">Dissolve<span>10</span></a></li>
+      <li ui-sref-active="active"><a class="sidebarsubmenu">Dissolved<span>10</span></a></li>
     </ul>
   </li>
 
   <li ui-sref-active="active">
     <a ui-sref="app.page.reports">
-      <i class="glyphicon glyphicon-file"></i>
+      <i class="fa fa-file-text-o"></i>
       <span>Reports</span>
       <i class="my-icon"><i></i></i>
     </a>
+    <ul class="nav nav-sub dk">
+      <li class="nav-sub-header">
+        <a ui-sref="app.page.reports">
+          <span>Reports</span>
+        </a>
+      </li>
+    </ul>
+  </li>
+
+  <li ui-sref-active="active">
+    <a ui-sref="app.page.users">
+      <i class="icon-users"></i>
+      <span>Users</span>
+      <i class="my-icon"><i></i></i>
+    </a>
+    <ul class="nav nav-sub dk">
+      <li class="nav-sub-header">
+        <a ui-sref="app.page.users">
+          <span>Users</span>
+        </a>
+      </li>
+    </ul>
   </li>
 
   <!-- <li ui-sref-active="active">
@@ -393,6 +422,6 @@
       <i class="icon-question icon"></i>
       <span translate="aside.nav.your_stuff.DOCUMENTS">Documents</span>
     </a>
-   </li>-->
+  </li>-->
 </ul>
 <!-- / list

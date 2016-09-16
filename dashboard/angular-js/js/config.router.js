@@ -334,10 +334,18 @@ angular.module('app')
 
                .state('app.page.reports', {
                   url: '/reports',
-                  templateUrl: 'tpl/main-reports.html',
-                 
+                  templateUrl: 'tpl/main-reports.html',            
               })
-              
+
+               .state('app.page.users', {
+                  url: '/users',
+                  templateUrl: 'tpl/users.html',            
+              })
+
+              .state('app.profile', {
+                  url: '/profile',
+                  templateUrl: 'tpl/profile.html'
+              })
       }
     ]
   );
